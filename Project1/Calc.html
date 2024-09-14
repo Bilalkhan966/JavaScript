@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<link>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+    <div id="calc">
+        <input type="text" id="search" readonly>  
+    <div class="calc-button">
+        <button class="button" onclick="resultCount ='';
+        document.querySelector('#search').value = resultCount;">C</button>
+
+        <button class="button" onclick="resultCount = resultCount + '1';
+        document.querySelector('#search').value = resultCount;">1</button>
+
+        <button class="button" onclick="resultCount = resultCount + '2';
+        document.querySelector('#search').value = resultCount;">2</button>
+
+        <button class="button" onclick="resultCount = resultCount + '+';
+        document.querySelector('#search').value = resultCount;">+</button>
+
+        <button class="button" onclick="resultCount = resultCount + '3';
+        document.querySelector('#search').value = resultCount;">3</button>
+
+        <button class="button" onclick="resultCount = resultCount + '4';
+        document.querySelector('#search').value = resultCount;">4</button>
+        
+        <button class="button" onclick="resultCount = resultCount + '-';
+        document.querySelector('#search').value = resultCount;">-</button>
+
+        <button class="button" onclick="resultCount = resultCount + '5';
+        document.querySelector('#search').value = resultCount;">5</button>
+        
+        <button class="button" onclick="resultCount = resultCount + '6';
+        document.querySelector('#search').value = resultCount;">6</button>
+
+        <button class="button" onclick="resultCount = resultCount + '*';
+        document.querySelector('#search').value = resultCount;">*</button>
+        
+        <button class="button" onclick="resultCount = resultCount + '7';
+        document.querySelector('#search').value = resultCount;">7</button>
+
+        <button class="button" onclick="resultCount = resultCount + '8';
+        document.querySelector('#search').value = resultCount;">8</button>
+
+        <button class="button" onclick="resultCount = resultCount + '/';
+        document.querySelector('#search').value = resultCount;">/</button>
+
+        <button class="button" onclick="
+        let result = eval(resultCount);
+        resultCount = result;
+        document.querySelector('#search').value = resultCount;">=</button>
+
+        <button class="button" onclick="resultCount = resultCount + '9';
+        document.querySelector('#search').value = resultCount;">9</button>
+
+        <button class="button" onclick="resultCount = resultCount + '0';
+        document.querySelector('#search').value = resultCount;">0</button>
+
+        <button class="button" onclick="resultCount = resultCount + '.';
+        document.querySelector('#search').value = resultCount;">.</button>
+    </div>
+</div>
+
+<script>
+    let resultCount = "";
+    document.querySelector('#search').value = resultCount;
+</script>
+</body>
+</html>
